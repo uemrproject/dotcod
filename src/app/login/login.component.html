@@ -1,0 +1,140 @@
+<div class="row">
+  <div class="kycimg">
+    <div class="col-xl-8">
+      <img
+        src="../../assets/Group235.png"
+        style="
+          height: 538.1824951171875px;
+          width: 723.1799926757812px;
+          left: 16.274169921875px;
+          top: 565.3340606689453px;
+          border-radius: 0px;
+        "
+      />
+    </div>
+  </div>
+  <div class="col-xl-4">
+    <div class="intro-card-title rectange1">
+      <div class="card-icon Wellcome">
+        <p style="margin-left: 100px ;width: 500px;">Well Come</p>
+        <br />
+        <br />
+      </div>
+    </div>
+    <div class="intro-card-body input1">
+      <br />
+      <br/>
+      <br>
+
+      <!-- Email  Field -->
+      <div class="container">
+        <form class="form-style" #login="ngForm" (ngSubmit)="signin(login)">
+          <div class="group">
+            <input
+              [ngClass]="{ 'border-red': email.errors && email.touched }"
+              type="text"
+              name="email"
+              (input)="emaillogin($event.target.value)"
+              required
+              ngModel
+              #email="ngModel"
+              email
+            />
+            <label for="name">
+              <i class="fas fa-envelope mr-2"></i> Enter Your Email</label
+            >
+            <span class="highlight"></span>
+            <span
+              [ngClass]="{ 'border-red': email.errors && email.touched }"
+              class="bar"
+            ></span>
+            <span
+              class="helper-text bg-error"
+              *ngIf="email.errors?.email && password.touched"
+            >
+              Please enter a valid Email address
+            </span>
+            <span
+              class="helper-text bg-error"
+              *ngIf="email.errors?.required && email.touched"
+            >
+              Email is required
+            </span>
+          </div>
+          <!-- Password Field -->
+          <div class="group">
+            <input
+              required
+              name="password"
+              (input)="passwordlogin($event.target.value)"
+              [ngClass]="{
+                'border-red': password.errors && password.touched
+              }"
+              [type]="hide ? 'password' : 'text'"
+              ngModel
+              #password="ngModel"
+              minlength="6"
+            />
+            <label for="name">
+              <i class="fas fa-unlock-alt mr-2"></i> Password</label
+            >
+            <span class="highlight"></span>
+            <span
+              [ngClass]="{
+                'border-red': password.errors && password.touched
+              }"
+              class="bar"
+            ></span>
+            <div
+              class="helper-text bg-error"
+              *ngIf="password.errors?.required && password.touched"
+            >
+              Password is required
+            </div>
+            <div
+              class="helper-text bg-error"
+              *ngIf="password.errors?.minlength && password.touched"
+            >
+              Password should be atleast 6 characters
+            </div>
+          </div>
+          <div style="margin-bottom: 20px"></div>
+          <!-- Show password Checkbox -->
+          <input
+            style="margin-right: 10px"
+            (change)="hide = !hide"
+            type="checkbox"
+          />
+          <span class="font-montserrat">Show Password</span>
+          <!-- Forgot Password button   -->
+          <button
+            type="button"
+            style="float: right; margin-bottom: 20px; margin-top: -10px"
+            class="button button-clear"
+            [disabled]="email.errors?.required"
+            (click)="onForgotPassword()"
+          >
+            Forgot Password?
+          </button>
+        </form>
+      </div>
+      <!-- Form container div-->
+      <br />
+      <!-- Action Footer -->
+      
+      <footer class="container mb-4">
+        <!-- Login Submit Button -->
+        <button
+          type="submit"
+          style="float: right"
+          (click)="signin(login)"
+          class="button"
+        >
+          <Span>Sign In</Span>
+        </button>
+      </footer>
+      <br />
+      <br />
+    </div>
+  </div>
+</div>

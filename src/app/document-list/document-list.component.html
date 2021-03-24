@@ -1,0 +1,187 @@
+<div class="documentlist">
+  <mat-sidenav-container class="scontainer">
+    <mat-sidenav mode="side" class="sidenav" opened>
+      <ul>
+        <li class=""  >
+          <img routerLink="/" style="position: absolute;
+          left: 15.6%;
+          right: 25.14%;
+          top: 3.22%;
+          width:50px;
+          height:80px;
+          margin-bottom: 15px;
+          bottom: 92.56%;" alt="login" src="../../assets/homo.jpg">
+      </li>
+      <li>
+          <img
+            src="../../assets/dashboard.svg"
+            alt="dashboard"
+            style="
+              position: absolute;
+              left: 26.13%;
+              right: 54.17%;
+              top: 10.42%;
+              bottom: 39.94%;
+            "
+          />
+        </li>
+        <li>
+          <img
+            src="../../assets/Group4.svg"
+            alt="group"
+            style="
+              position: absolute;
+              width: 94px;
+              height: 58px;
+              left: 0px;
+              top: 216px;
+
+              background: #ffffff;
+            "
+          />
+        </li>
+        <li>
+          <img
+            src="../../assets/business.svg"
+            alt="business"
+            style="
+              position: absolute;
+              left: 26.13%;
+              right: 14.54%;
+              top: 15.42%;
+              bottom: 39.94%;
+            "
+          />
+        </li>
+        <li>
+          <img
+            src="../../assets/settings.svg"
+            alt="setting"
+            style="
+              position: absolute;
+              left: 29.17%;
+              right: 29.16%;
+              top: 29.17%;
+              bottom: 29.17%;
+            "
+          />
+        </li>
+        <li>
+          <img
+            src="../../assets/user.svg"
+            alt="user"
+            style="
+              position: absolute;
+              left: 29.17%;
+              right: 29.16%;
+              top: 70%;
+              bottom: 0%;
+            "
+          />
+        </li>
+        <li>
+          <img
+            src="../../assets/logout.svg"
+            alt="logout"
+            style="
+              position: absolute;
+              left: 27.43%;
+              right: 0%;
+              top: 80%;
+              bottom: 0;
+            "
+          />
+        </li>
+      </ul>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content">
+        <br />
+        <br />
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-4">
+              <!-- marital Status field -->
+              <div class="select font-montserrat">
+                <select class="select-text" ngModel #id="ngModel" name="id">
+                  <option value="documentid">Document Id</option>
+                  <option value="id1">Id 1</option>
+                  <option value="id2">Id 2</option>
+                  <option value="id3">Id</option>
+                </select>
+                <span class="select-highlight"></span>
+                <span
+                  class="select-bar"
+                  [ngClass]="{
+                    'border-red': id.errors && id.touched
+                  }"
+                ></span>
+                <label class="select-label"> Document Id</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container-fluid" style="overflow-x: auto; overflow-y: auto">
+          <table class="table table-bordered table-striped">
+            <tbody>
+              <tr *ngFor="let doc of dataList"
+              class="clickable-row"
+                  [routerLink]="['/documentdetails']"
+                  (click)="sendid(doc)"
+              >
+                <td>
+                  <div class="heading">Document ID</div>
+                  <div class="value">
+                    {{ doc.Document_ID._id }}
+                  </div>
+
+                  <div class="heading">Scan Id</div>
+                  <div class="value">
+                    {{ doc.Scan_ID }}
+                  </div>
+                </td>
+
+                <td>
+                  <div class="heading">Created On</div>
+                  <div class="value">
+                    {{ doc.Document_ID.createdAt | date: "dd-MM-yy" }}
+                  </div>
+
+                  <div class="heading">Created Time</div>
+                  <div class="value">
+                    {{ doc.Document_ID.createdAt | date: "hh:mm:ss" }}
+                  </div>
+                </td>
+
+                <td>
+                  <div class="heading">Name</div>
+                  <div class="value">
+                    {{ doc.Document_ID.First_Name }}
+                  </div>
+
+                  <div class="heading">Nationality</div>
+                  <div class="value">
+                    {{ doc.Document_ID.Nationality }}
+                  </div>
+                </td>
+                <td>
+                  <div class="heading">Tenent</div>
+                  <div class="value">
+                    {{ doc.Tenant_ID.Name }}
+                  </div>
+
+                  <div class="heading">Status</div>
+                  <div class="value">
+                    {{ doc.Document_ID.Status }}
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

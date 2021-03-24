@@ -1,0 +1,245 @@
+ .kycimg{
+    position: relative;
+    width: 904px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    
+    background: #F7FFFB;
+}
+.col-xl-4{
+    margin-top: 150px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.rectange1{
+    height: 6px;
+    width: 54px;
+    left: 969px;
+    top: 255px;
+    border-radius: 0px;
+    background: #21B371;
+
+    
+} 
+ .Wellcome{
+   
+width: 600px;
+height: 38px;
+left: 971px;
+top: 271px;
+margin-bottom: 50px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 37px;}
+/* identical to box height */
+
+/* letter-spacing: 0.06em;
+
+color: #444445;
+} */ */
+/* .input1{
+  
+
+
+position: absolute;
+width: 380px;
+height: 50px;
+left: 969px;
+top: 372px;
+
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 10px;
+} */
+
+ .bgimg-1 {
+  background-image: "";
+  height: 89.5vh;
+  margin-top: -24px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro-card {
+  padding: 20px;
+  margin: 20px;
+}
+.col-xl-12 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 50px;
+  margin-bottom: 30px;
+
+  padding: auto;
+  max-width: 4px 2px;
+}
+.btn.btn-dark {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.intro-card-title {
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  opacity: 0.8;
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+  word-wrap: break-word;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.intro-card-body {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Nunito", sans-serif;
+}
+.caption {
+  padding: 20px;
+  text-transform: capitalize;
+  background-color: lightgrey;
+  color: black;
+  mix-blend-mode: soft-light;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  font-size: 3rem;
+}
+.li {
+  margin-bottom: 0px;
+  display: inline-block;
+  padding-bottom: 0px;
+}
+.detail {
+  text-align: left;
+
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+
+  color: gray;
+}
+.intro-card-body.ul {
+  list-style-type: circle;
+}
+
+.footer {
+  background-color: lightgrey;
+  width: 100%;
+  padding: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.footer-text {
+  opacity: 0.8;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+}
+.footer-text::before {
+  content: "©";
+}
+.selected {
+  background-color: #606c76;
+  border-color: #606c76;
+  color: #fff;
+  outline: 0;
+}
+.card-icon {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.same-height {
+  height: 300px !important;
+}
+
+/************************************************************ Large devices only ***********************************************************/
+
+@media (min-width: 1200px) {
+}
+
+/******************************************************************Medium devices only********************************************* **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .caption {
+    bottom: 60%;
+  }
+  .footer-text {
+    font-family: "Rubik", sans-serif;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .caption {
+    font-size: 2.5rem;
+    bottom: 45%;
+  }
+}
+
+/* extra small devices */
+@media (max-width: 767px) {
+  .home-wrapper {
+    padding: 20px;
+  }
+  .intro-card {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .card-icon {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-text {
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+  }
+  .intro-card-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .intro-card-title::before {
+    margin-right: 0px;
+  }
+  .intro-card {
+    padding: 12px;
+  }
+  .caption {
+    bottom: 10%;
+    font-size: 2rem;
+  }
+}
+
+/************************************************************************* Very Extra small devices only *********************************************/
+@media (max-width: 520px) {
+  .caption {
+    bottom: 15%;
+  }
+}
+
+@media (max-width: 380px) {
+  .caption {
+    font-size: 1.5rem;
+  }
+}

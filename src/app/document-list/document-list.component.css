@@ -1,0 +1,51 @@
+.documentlist{
+    position: relative;
+width: 1440px;
+height: 900px;
+margin: 20px;
+background: #F8F8F8;
+}
+.scontainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+  }
+  .sidenav{
+    position: absolute;
+    width: 94px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    
+    background: #333333;
+  }
+  .vshape{
+    position: absolute;
+    left: 15.6%;
+    right: 25.14%;
+    top: 3.22%;
+    bottom: 92.56%;
+    
+    background: #21B371;
+  }
+  .content{
+      margin-left: 50px;
+  }
+  .heading{
+    color: gray;
+    margin-bottom: 5px;
+
+  }
+  .value{
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    
+  }

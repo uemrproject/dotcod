@@ -1,0 +1,589 @@
+<div class="documentlist" *ngIf="dataList">
+  <mat-sidenav-container class="scontainer">
+    <mat-sidenav mode="side" class="sidenav" opened>
+      <ul>
+        <li class=""  >
+            <img routerLink="/" style="position: absolute;
+            left: 15.6%;
+            right: 25.14%;
+            top: 3.22%;
+            width:50px;
+            height:80px;
+            margin-bottom: 15px;
+            bottom: 92.56%;" alt="login" src="../../assets/homo.jpg">
+        </li>
+        <li>
+          <img
+            src="../../assets/dashboard.svg"
+            alt="dashboard"
+            style="
+              position: absolute;
+              left: 26.13%;
+              right: 54.17%;
+              top: 10.42%;
+              bottom: 39.94%;
+            "
+          />
+        </li>
+        <li>
+          <img
+            src="../../assets/Group4.svg"
+            alt="group"
+            style="
+              position: absolute;
+              width: 94px;
+              height: 58px;
+              left: 0px;
+              top: 216px;
+
+              background: #ffffff;
+            "
+          />
+        </li>
+        <li>
+          <img
+            src="../../assets/business.svg"
+            alt="business"
+            style="
+              position: absolute;
+              left: 26.13%;
+              right: 14.54%;
+              top: 15.42%;
+              bottom: 39.94%;
+            "
+          />
+        </li>
+        <li>
+          <img
+            src="../../assets/settings.svg"
+            alt="setting"
+            style="
+              position: absolute;
+              left: 29.17%;
+              right: 29.16%;
+              top: 29.17%;
+              bottom: 29.17%;
+            "
+          />
+        </li>
+        <li>
+          <img
+            src="../../assets/user.svg"
+            alt="user"
+            style="
+              position: absolute;
+              left: 29.17%;
+              right: 29.16%;
+              top: 70%;
+              bottom: 0%;
+            "
+          />
+        </li>
+        <li>
+          <img
+            src="../../assets/logout.svg"
+            alt="logout"
+            style="
+              position: absolute;
+              left: 27.43%;
+              right: 0%;
+              top: 80%;
+              bottom: 0;
+            "
+          />
+        </li>
+      </ul>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content">
+        <br />
+        <br />
+        <div
+          class="name"
+          style="
+            position: absolute;
+            width: 137px;
+            height: 23px;
+            left: 156px;
+            top: 28px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+
+            color: #000000;
+          "
+        >
+          {{ name }}
+        </div>
+        <h6
+          style="
+            position: absolute;
+            width: 111px;
+            height: 21px;
+            left: 711px;
+            top: 27px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+
+            color: #333333;
+          "
+        >
+          Document ID:
+        </h6>
+        <div
+          class="id"
+          style="
+            position: absolute;
+            width: 279px;
+            height: 21px;
+            left: 838px;
+            top: 27px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+
+            color: #21b371;
+          "
+        >
+          {{ documentid }}
+        </div>
+        <button style="position: absolute;
+        width: 120px;
+        height: 30px;
+        left: 1171px;
+        top: 22px;
+        color: #21B371;
+        background: #E8FEF4;
+        border: 1px solid #21B371;
+        box-sizing: border-box;
+        border-radius: 3px;
+       ">More Info
+
+        </button>
+        <button style="position: absolute;
+        width: 150px;
+        height: 30px;
+        left: 1350px;
+        top: 22px;
+        color: #21B371;
+        background: #E8FEF4;
+        border: 1px solid #21B371;
+        box-sizing: border-box;
+        border-radius: 3px;
+       ">Scan History
+
+        </button>
+
+        <hr />
+
+        <div class="rectange11">
+          <a
+          clickable=true
+          routerLinkActive:true
+            style="
+              position: absolute;
+              width: 77px;
+              height: 21px;
+              left: 50px;
+              top: 50px;
+
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 21px;
+              /* identical to box height */
+
+              color: #000000;
+            "
+          >
+            Id Details
+          </a>
+          <a
+            style="
+              position: absolute;
+              width: 67px;
+              height: 21px;
+              left: 200px;
+              top: 50px;
+
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 21px;
+              /* identical to box height */
+
+              color: #adadad;
+            "
+          >
+            Address
+          </a>
+          <hr style="margin-top: 90px" />
+          <div class="item">
+            <div class="select font-montserrat">
+              <select class="select-text">
+                <option value="">Document Id</option>
+                <option value="">Id 1</option>
+                <option value="">Id 2</option>
+              </select>
+              <span class="select-highlight"></span>
+
+              <label class="select-label"> Document Id</label>
+            </div>
+
+            <div class="container">
+              <form class="form-style">
+                <br />
+                <div class="group">
+                  <input type="text" />
+                  <label for="name">
+                    <i class="fas fa-envelope mr-2"></i> Id Number</label
+                  >
+                </div>
+                <br />
+                <div class="group">
+                  <input />
+                  <label for="name"> First Name</label>
+                  <span class="highlight"></span>
+                </div>
+                <br />
+                <div class="group">
+                  <input type="text" />
+                  <label for="name">
+                    <i class="fas fa-envelope mr-2"></i> Last Name</label
+                  >
+                </div>
+                <br />
+                <div class="group">
+                  <input type="date" />
+                  <label for="name"> Date of Birth</label>
+                  <span class="highlight"></span>
+                  <br />
+                  <div class="group">
+                    <input type="date" />
+                    <label for="name"> Verify Date</label>
+                    <span class="highlight"></span>
+                  </div>
+                </div>
+              </form>
+              <br />
+              <button
+                style="
+                  position: absolute;
+                  width: 100px;
+                  height: 30px;
+                  left: 50px;
+                  top: 683px;
+
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 16px;
+                "
+                type="button"
+                class="btn btn-secondary"
+              >
+                Cancel
+              </button>
+
+              <button
+                style="
+                  position: absolute;
+                  width: 86px;
+                  height: 32px;
+                  left: 200px;
+                  top: 681px;
+
+                  background: #37b97e;
+                  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  border-radius: 3px;
+                "
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="middle">
+            <h4 style="position: absolute;
+            width: 91px;
+            height: 19px;
+            
+            top: 50px;
+            
+          
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+            
+            
+            color: #000000;">Identity Card</h4>
+            <hr style="position: absolute;
+            width: 592px;
+            height: 0px;
+         left:0px;
+            top: 60px;
+            
+            border: 1px solid #DFDFDF;">
+
+            <div class="icard">
+                <img *ngIf="!back"   [src]= "dataList.ID_Card_Front">
+                <img *ngIf="back"[src]="dataList.ID_Card_Back">
+                
+            </div>
+            <button
+            id="front"
+            (click)="frontpic()"
+        
+            style="position: absolute;
+                width: 90px;
+                height: 50px;
+              margin-left: 100px;
+                top: 500px;
+                
+                background: #333333;
+                ">Front
+
+                </button>
+            <button
+            (click)="backpic()"
+            [disabled]="!front"
+            style="position: absolute;
+
+                width: 90px;
+                height: 50px;
+              margin-left: 250px;
+                top: 500px;
+                
+                background: #333333;
+                ">Back
+
+                </button>
+
+                <h4 style="position: absolute;
+                width: 123px;
+                height: 19px;
+               
+                top: 570px;
+                
+                
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                /* identical to box height */
+                
+                
+                color: #000000;">
+                    Live Photo Check
+                </h4>
+<hr style="position: absolute;
+width: 592px;
+height: 0px;
+
+top: 580px;
+
+border: 1px solid #DFDFDF;">
+
+<div class="row live_photo">
+    <div class="col-xl-6">
+      <div class="intro-card-body">
+        <div >
+          <img style="  width: 181px;
+          height: 225px;" [src]="dataList.LiveCheck_Photos[0]">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-6">
+      <div class="intro-card-body">
+        <img style="  width: 181px;
+        height: 225px;" [src]="dataList.LiveCheck_Photos[1]">
+        </div>
+       
+      </div>
+    </div>
+    <div class="comment">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="group">
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      type="text"
+                    placeholder="Type Your Comment Here"
+                      style="height: 100px"
+                    ></textarea>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <h5 style="position: absolute;
+                    width: 174px;
+                    height: 16px;
+                   
+                margin-top: 15px;
+                    
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-left: 250px;
+                    color: #0970AA;">
+                        View Your Comment Here
+                    </h5>
+
+                    <button style="position: absolute;
+                    width: 100px;
+                    height: 32px;
+                    color: #21B371;
+                    margin-top: 15px;
+                    margin-left: 450px;
+                    background: #E8FEF4;
+                    border: 1px solid #21B371;
+                    box-sizing: border-box;
+                    border-radius: 3px;">Comment</button>
+                
+
+    </div>
+  
+      
+
+
+
+        </div>
+        <div class="rectange13">
+          <div class="rectange12">
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="intro-card-body">
+                  <div class="scanid">
+                    <div>scan Id</div>
+                    <div>Submitted Time</div>
+                    <div>Device Signature</div>
+                    <div>Ip Address</div>
+                    <div>Mode</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6">
+                <div class="intro-card-body">
+                  <div class="dataid">
+                    <div>
+                      {{ dataList.Scan_ID }}
+                    </div>
+                    <div>
+                      {{ dataList.updatedAt | date: "hh:mm:ss" }}
+                    </div>
+                    <div>
+                      {{ devicesign }}
+                    </div>
+                    <div>
+                      {{ dataList.ipAddress }}
+                    </div>
+                    <div>
+                      {{ dataList.Mode }}
+                    </div>
+                  </div>
+                  <button
+                    style="
+                      position: absolute;
+                      width: 90px;
+                      height: 32px;
+                      color: #ffffff;
+                      top: 230px;
+                      margin-left: -60px;
+                      background: #e04d4d;
+                      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                      border-radius: 3px;
+                    "
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4>Scan Result</h4>
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="intro-card-body">
+                <div class="scanres">
+                  <div>Status</div>
+                  <div>ID card</div>
+                  <div>Address</div>
+                  <div>Live Check</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-6">
+              <div class="intro-card-body">
+                <div class="datares">
+                  <div>Submitted</div>
+                  <div>NA</div>
+                  <div>NA</div>
+                  <div>NA</div>
+                </div>
+                <button
+                  type="button"
+                  style="
+                    position: absolute;
+                    width: 76px;
+                    height: 32px;
+                    color: #37b97e;
+                    top: 500px;
+                    margin-left: -100px;
+                    background: #e8fef4;
+                    border: 1px solid #21b371;
+                    box-sizing: border-box;
+                    border-radius: 3px;
+                  "
+                >
+                  Edit
+                </button>
+                <button
+                  style="
+                    position: absolute;
+                    width: 116px;
+                    height: 32px;
+
+                    top: 500px;
+                    color: #ffffff;
+                    background: #37b97e;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    border-radius: 3px;
+                  "
+                >
+                  Dowload
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
